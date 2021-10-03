@@ -11,7 +11,7 @@ namespace TennisGameScore.Tests
         public void When_The_Tennis_Score_Game_Begin_Welcome_Message_Should_Be_Returned()
         {
             TennisGameScoreCalculator tennisGameScoreCalculator = new TennisGameScoreCalculator();
-            string tennisGameScoreCalculatorWelcomeMessage = tennisGameScoreCalculator.BeginGame();
+            string tennisGameScoreCalculatorWelcomeMessage = tennisGameScoreCalculator.WelcomeMessage;
             Assert.Equal(_welcomeMessage,tennisGameScoreCalculatorWelcomeMessage);
         }
     }
