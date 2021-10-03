@@ -13,7 +13,7 @@ namespace TennisGameScore
         #region Properties
          public string WelcomeMessage { 
             get {
-                return "Welcome to the tennis game";
+                return "Welcome to the tennis score game calculator";
             }
         }
         #endregion
