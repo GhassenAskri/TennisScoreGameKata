@@ -10,7 +10,7 @@ namespace TennisGameScore
         }
         public string BeginGame()
         {
-               throw new NotImplementedException("method not implemented");
+               return "Wellcome to the tennis game";
         }
         
     }
