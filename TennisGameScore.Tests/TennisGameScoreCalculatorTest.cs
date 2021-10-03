@@ -6,9 +6,9 @@ namespace TennisGameScore.Tests
 {
     public class TennisGameScoreCalculatorTest
     {
-        private readonly string _welcomeMessage =  "Wellcome to the tennis game";
+        private readonly string _welcomeMessage =  "Welcome to the tennis game";
         [Fact]
-        public void WHEN_THE_TENNIS_SCORE_GAME_BEGIN_WELCOME_MESSAGE_SHOULD_BE_PROMPED()
+        public void When_The_Tennis_Score_Game_Begin_Welcome_Message_Should_Be_Returned()
         {
             TennisGameScoreCalculator tennisGameScoreCalculator = new TennisGameScoreCalculator();
             string tennisGameScoreCalculatorWelcomeMessage = tennisGameScoreCalculator.BeginGame();
