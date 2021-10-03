@@ -4,7 +4,7 @@ namespace TennisGameScore
 {
     public class TennisGameScoreCalculator
     {
-        private readonly string _welcomeMessage =  "Wellcome to the tennis game";
+        private readonly string _welcomeMessage =  "Welcome to the tennis game";
 
         public TennisGameScoreCalculator()
         {
