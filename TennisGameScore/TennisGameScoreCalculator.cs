@@ -4,16 +4,22 @@ namespace TennisGameScore
 {
     public class TennisGameScoreCalculator
     {
-        private readonly string _welcomeMessage =  "Welcome to the tennis game";
-
-        public TennisGameScoreCalculator()
+        #region Constuctor
+          public TennisGameScoreCalculator()
         {
             
         }
-        public string BeginGame()
-        {
-               return _welcomeMessage;
+        #endregion     
+        #region Properties
+         public string WelcomeMessage { 
+            get {
+                return "Welcome to the tennis game";
+            }
         }
+        #endregion
+       
+
+      
         
     }
 }
