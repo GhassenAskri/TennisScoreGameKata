@@ -6,7 +6,12 @@ namespace TennisGameScore
     {
         public TennisGameScoreCalculator()
         {
-            throw new NotImplementedException("Not implemented");
+            
         }
+        public string BeginGame()
+        {
+               throw new NotImplementedException("method not implemented");
+        }
+        
     }
 }
