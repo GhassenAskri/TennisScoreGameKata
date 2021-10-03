@@ -5,7 +5,7 @@ namespace TennisGameScore
     public class TennisGameScoreCalculator
     {
         #region Constuctor
-          public TennisGameScoreCalculator()
+        public TennisGameScoreCalculator()
         {
             
         }
@@ -16,10 +16,6 @@ namespace TennisGameScore
                 return "Welcome to the tennis score game calculator";
             }
         }
-        #endregion
-       
-
-      
-        
+        #endregion   
     }
 }
