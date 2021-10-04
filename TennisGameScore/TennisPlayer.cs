@@ -12,7 +12,10 @@ namespace TennisGameScore
             this.Name = name;           
         }
         public void HasWinTheBall(int numberOfBall){
-           throw new NotImplementedException("Method not implemented");
+           this.Score = "love";
+        }
+        public void HasLooseTheBall(int numberOfBall){
+           throw new NotImplementedException("Method Not Implemented");
         }
         #endregion
     }

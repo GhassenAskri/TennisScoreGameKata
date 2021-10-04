@@ -27,13 +27,16 @@ namespace TennisGameScore.Tests
         public void When_The_First_Player_Win_The_First_Ball()
         {
             //Given
-            _firstPlayer.HasWinTheBall(0); 
+            _firstPlayer.HasWinTheBall(0);
+            _secondPlayer.HasLooseTheBall(0);
             //When
             _tennisGameScoreCalculator = new TennisGameScoreCalculator();
             _gameScore = _tennisGameScoreCalculator.CalculateScore(_firstPlayer,_secondPlayer);
             string firstPlayerScore = _gameScore[_firstPlayer.Name]; 
+            string secondPlayerScore = _gameScore[_secondPlayer.Name]; 
             //Assert
             Assert.True(firstPlayerScore == "love");
+            Assert.True(firstPlayerScore == "-");
         }
         #endregion
     }
