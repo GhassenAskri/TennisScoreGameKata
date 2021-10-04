@@ -4,7 +4,14 @@ namespace TennisGameScore
     public class TennisPlayer{
         #region Properties
         public string Name {get;set;}
-        public Score Score {get;set;}
+        public Score Score{get;set;}
+        public string ScoreResult
+        {
+            get{
+                return Score.FormatScore();
+            }
+        }
+           
         #endregion 
         #region Constructor
         public TennisPlayer(string name)
