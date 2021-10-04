@@ -29,6 +29,22 @@ namespace TennisGameScore.Tests
             Assert.True(firstPlayerScore == "love");
             Assert.True(secondPlayerScore == "-");
         }
+        [Fact]
+        public void When_The_First_Player_Win_The_First_And_The_Second_Ball()
+        {
+            //Given
+            _firstPlayer.HasWinTheBall(0);
+            _secondPlayer.HasLooseTheBall(0);
+            _firstPlayer.HasWinTheBall(1);
+            _secondPlayer.HasLooseTheBall(1);
+            //When
+            _scoreNoteBook = ScoreNoteBook.SaveScore(_firstPlayer,_secondPlayer);       
+            string firstPlayerScore = _scoreNoteBook[_firstPlayer.Name]; 
+            string secondPlayerScore = _scoreNoteBook[_secondPlayer.Name]; 
+            //Assert
+            Assert.True(firstPlayerScore == "love fifteen");
+            Assert.True(secondPlayerScore == "- -");
+        }
         #endregion
     }
 }
