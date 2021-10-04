@@ -24,6 +24,9 @@ namespace TennisGameScore
            this.Score.AddNewScore("love");
         if(numberOfBall == 1)
             this.Score.AddNewScore("fifteen");
+        if (numberOfBall == 2)
+            this.Score.AddNewScore("fourteen");
+
         }
         public void HasLooseTheBall(int numberOfBall){
            this.Score.AddNewScore("-");
