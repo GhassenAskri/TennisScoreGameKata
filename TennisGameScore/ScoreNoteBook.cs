@@ -14,8 +14,8 @@ namespace TennisGameScore
         public static Dictionary<string,string> SaveScore(TennisPlayer firstPlayer, TennisPlayer secondPlayer)
         {
                 _score = new Dictionary<string,string>();
-                _score.Add(firstPlayer.Name,firstPlayer.Score);
-                _score.Add(secondPlayer.Name,secondPlayer.Score);
+                _score.Add(firstPlayer.Name,firstPlayer.Score.FormatScore());
+                _score.Add(secondPlayer.Name,secondPlayer.Score.FormatScore());
                 return _score;
         }
         #endregion  
