@@ -36,7 +36,7 @@ namespace TennisGameScore.Tests
             string secondPlayerScore = _gameScore[_secondPlayer.Name]; 
             //Assert
             Assert.True(firstPlayerScore == "love");
-            Assert.True(firstPlayerScore == "-");
+            Assert.True(secondPlayerScore == "-");
         }
         #endregion
     }
