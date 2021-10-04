@@ -11,8 +11,8 @@ namespace TennisGameScore
         {
             this.Name = name;           
         }
-        public void HasWinAPoint(string nameOfThePoint){
-            this.Score = nameOfThePoint;
+        public void HasWinTheBall(int numberOfBall){
+           throw new NotImplementedException("Method not implemented");
         }
         #endregion
     }

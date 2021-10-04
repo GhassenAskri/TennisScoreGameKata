@@ -27,7 +27,7 @@ namespace TennisGameScore.Tests
         public void When_The_First_Player_Win_The_First_Ball()
         {
             //Given
-            _firstPlayer.HasWinAPoint("love"); 
+            _firstPlayer.HasWinTheBall(0); 
             //When
             _tennisGameScoreCalculator = new TennisGameScoreCalculator();
             _gameScore = _tennisGameScoreCalculator.CalculateScore(_firstPlayer,_secondPlayer);
