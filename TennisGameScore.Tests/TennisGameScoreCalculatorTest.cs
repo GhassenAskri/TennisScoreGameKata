@@ -56,6 +56,7 @@ namespace TennisGameScore.Tests
             _firstPlayer.HasWinTheBall(0);
             _firstPlayer.HasWinTheBall(1);          
             _firstPlayer.HasWinTheBall(2);
+            _firstPlayer.HasWinTheBall(3);
             
             //When
 
