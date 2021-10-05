@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace TennisGameScore
 {
-    public class TennisPlayer{
+    public class Player{
         #region Properties
         public string Name {get;set;}
         private Score _scoreRecord{get;set;}
@@ -17,7 +17,7 @@ namespace TennisGameScore
            
         #endregion 
         #region Constructor
-        public TennisPlayer(string name)
+        public Player(string name)
         {
             this.Name = name;  
             this._scoreRecord = new Score();        

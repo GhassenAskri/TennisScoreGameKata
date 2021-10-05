@@ -8,8 +8,8 @@ namespace TennisGameScore.Tests
     public class TennisGameScoreCalculatorTest
     {
         #region Setup
-        private  TennisPlayer _firstPlayer = new TennisPlayer("Rafeal Nadal");
-        private TennisPlayer _secondPlayer = new TennisPlayer("Roger Federer");    
+        private  Player _firstPlayer = new Player("Rafeal Nadal");
+        private  Player _secondPlayer = new Player("Roger Federer");    
     
         #endregion
 

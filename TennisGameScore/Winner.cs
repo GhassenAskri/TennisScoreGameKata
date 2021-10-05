@@ -4,7 +4,7 @@ namespace TennisGameScore
 {
     public static class Winner 
     {
-        public static string GetTheWinnerName(TennisPlayer firstPlayer, TennisPlayer secondPlayer)
+        public static string GetTheWinnerName(Player firstPlayer, Player secondPlayer)
         {
                 return firstPlayer.Name;
         }
