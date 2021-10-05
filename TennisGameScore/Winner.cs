@@ -6,7 +6,9 @@ namespace TennisGameScore
     {
         public static string GetTheWinnerName(Player firstPlayer, Player secondPlayer)
         {
-                return firstPlayer.Name;
+            if(secondPlayer.Score.Contains("winner"))
+                return secondPlayer.Name;
+            return firstPlayer.Name;
         }
     }
 }
