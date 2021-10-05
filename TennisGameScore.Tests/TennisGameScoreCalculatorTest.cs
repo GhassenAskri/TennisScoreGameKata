@@ -9,8 +9,7 @@ namespace TennisGameScore.Tests
     {
         #region Setup
         private  TennisPlayer _firstPlayer = new TennisPlayer("Rafeal Nadal");
-        private TennisPlayer _secondPlayer = new TennisPlayer("Roger Federer"); 
-        private Dictionary<string,string> _scoreNoteBook;    
+        private TennisPlayer _secondPlayer = new TennisPlayer("Roger Federer");    
     
         #endregion
 
@@ -48,6 +47,20 @@ namespace TennisGameScore.Tests
 
             //Assert
             Assert.True(_firstPlayer.Score == "love fifteen thirteen");
+        }
+
+         [Fact]
+        public void When_The_First_Player_Win_The_First_The_Second_The_Third_And_The_Fourth_Ball()
+        {
+            //Given
+            _firstPlayer.HasWinTheBall(0);
+            _firstPlayer.HasWinTheBall(1);          
+            _firstPlayer.HasWinTheBall(2);
+            
+            //When
+
+            //Assert
+            Assert.True(_firstPlayer.Score == "love fifteen thirteen fourteen");
         }
         #endregion
     }
