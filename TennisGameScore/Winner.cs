@@ -6,7 +6,7 @@ namespace TennisGameScore
     {
         public static string GetTheWinnerName(TennisPlayer firstPlayer, TennisPlayer secondPlayer)
         {
-                throw new NotImplementedException("Method not Implemented");
+                return firstPlayer.Name;
         }
     }
 }
