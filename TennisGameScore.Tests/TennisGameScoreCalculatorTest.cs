@@ -78,6 +78,21 @@ namespace TennisGameScore.Tests
             //Assert
             Assert.True(_firstPlayer.Score == "love fifteen thirteen fourteen winner");
         }
+        [Fact]
+        public void When_The_First_Player_Won_The_Game()
+        {
+            //Given
+            _firstPlayer.HasWinTheBall(0);
+            _firstPlayer.HasWinTheBall(1);          
+            _firstPlayer.HasWinTheBall(2);
+            _firstPlayer.HasWinTheBall(3);
+            _firstPlayer.HasWinTheGameBall();
+            
+            //When
+            Winner.GetTheWinnerName(_firstPlayer,_secondPlayer);
+            //Assert
+            Assert.True(_firstPlayer.Score == "love fifteen thirteen fourteen winner");
+        }
         #endregion
     }
 }
