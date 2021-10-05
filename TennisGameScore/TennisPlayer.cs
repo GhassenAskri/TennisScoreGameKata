@@ -1,14 +1,17 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
+
 namespace TennisGameScore
 {
     public class TennisPlayer{
         #region Properties
         public string Name {get;set;}
-        public Score Score{get;set;}
-        public string ScoreResult
+        private ScoreRecord _scoreRecord{get;set;}
+        public string Score
         {
             get{
-                return Score.FormatScore();
+                return _scoreRecord.getTotalScorePoints();
             }
         }
            
@@ -17,20 +20,11 @@ namespace TennisGameScore
         public TennisPlayer(string name)
         {
             this.Name = name;  
-            this.Score = new Score();        
-        }
-        public void HasWinTheBall(int numberOfBall){
-        if(numberOfBall == 0)
-           this.Score.AddNewScore("love");
-        if(numberOfBall == 1)
-            this.Score.AddNewScore("fifteen");
-        if (numberOfBall == 2)
-            this.Score.AddNewScore("fourteen");
-
-        }
-        public void HasLooseTheBall(int numberOfBall){
-           this.Score.AddNewScore("-");
+            this._scoreRecord = new ScoreRecord();        
         }
         #endregion
+        public void HasWinTheBall(int numberOfBall){
+           this._scoreRecord.AddNewScorePoint(numberOfBall);
+        }
     }
 }
