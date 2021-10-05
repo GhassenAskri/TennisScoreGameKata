@@ -11,7 +11,7 @@ namespace TennisGameScore
         {
             this.ScoreRecordPoints = new Collection<string>();
         }
-        private string [] _scoreCollectionNames = {"love","fifteen","thirteen"};
+        private string [] _scoreCollectionNames = {"love","fifteen","thirteen","fourteen"};
         public ICollection<string> ScoreRecordPoints { get; set;}
         
         public void AddNewScorePoint(int numberOfTheBall)
