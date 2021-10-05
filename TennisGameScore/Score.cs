@@ -5,9 +5,9 @@ using System.Collections.ObjectModel;
 
 namespace TennisGameScore
 {
-    public class ScoreRecord
+    public class Score
     {
-        public ScoreRecord()
+        public Score()
         {
             this.ScoreRecordPoints = new Collection<string>();
         }

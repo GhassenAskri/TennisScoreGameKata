@@ -7,7 +7,7 @@ namespace TennisGameScore
     public class TennisPlayer{
         #region Properties
         public string Name {get;set;}
-        private ScoreRecord _scoreRecord{get;set;}
+        private Score _scoreRecord{get;set;}
         public string Score
         {
             get{
@@ -20,7 +20,7 @@ namespace TennisGameScore
         public TennisPlayer(string name)
         {
             this.Name = name;  
-            this._scoreRecord = new ScoreRecord();        
+            this._scoreRecord = new Score();        
         }
         #endregion
         public void HasWinTheBall(int numberOfBall){
