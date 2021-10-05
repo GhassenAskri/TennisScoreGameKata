@@ -27,7 +27,7 @@ namespace TennisGameScore
            this._scoreRecord.AddNewScorePoint(numberOfBall);
         }
         public void HasWinTheGameBall(){
-            throw new NotImplementedException("MethodNotImplemented");
+            this._scoreRecord.AddNewScorePoint("gameBall");
         }
     }
 }

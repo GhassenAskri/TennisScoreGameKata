@@ -76,7 +76,7 @@ namespace TennisGameScore.Tests
             //When
  
             //Assert
-            Assert.True(_firstPlayer.Score == "love fifteen thirteen fourteen gameBall");
+            Assert.True(_firstPlayer.Score == "love fifteen thirteen fourteen winner");
         }
         #endregion
     }
