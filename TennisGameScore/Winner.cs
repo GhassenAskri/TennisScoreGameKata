@@ -4,9 +4,12 @@ namespace TennisGameScore
 {
     public static class Winner 
     {
+        private static string _gameBallPoint = "winner";
         public static string GetTheWinnerName(Player firstPlayer, Player secondPlayer)
         {
-                return firstPlayer.Name;
+            if(secondPlayer.Score.Contains(_gameBallPoint))
+                return secondPlayer.Name;
+            return firstPlayer.Name;
         }
     }
 }
