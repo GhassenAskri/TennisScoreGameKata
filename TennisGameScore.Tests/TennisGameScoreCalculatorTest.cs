@@ -173,7 +173,7 @@ namespace TennisGameScore.Tests
                 Assert.True(_secondPlayer.Name  == winnerName);
             }
             #endregion
-            #region When the first and second player have the same score after four balls 
+            #region When the first player win after an advantage point 
                 [Fact]
                 public void When_The_First_Have_Advantage_Point()
                 {
