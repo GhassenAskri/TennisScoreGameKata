@@ -173,7 +173,22 @@ namespace TennisGameScore.Tests
                 Assert.True(_secondPlayer.Name  == winnerName);
             }
             #endregion
-            #region When the second player the game by winning all the balls
+            #region When the first and second player have the same score after four balls 
+                [Fact]
+                public void When_The_First_Have_Advantage_Point()
+                {
+                    _firstPlayer.HasWinTheBall(0);
+                    _secondPlayer.HasWinTheBall(1);          
+                    _firstPlayer.HasWinTheBall(2);
+                    _secondPlayer.HasWinTheBall(3);
+                    _firstPlayer.HasWinTheBall(4);
+                    _secondPlayer.HasWinTheBall(5);
+                    _firstPlayer.HasWinTheBall(6);
+                    _secondPlayer.HasWinTheBall(7);
+                    _firstPlayer.HasWinTheBall(8);
+                    Assert.True(_firstPlayer.Score == "love fifteen thirteen fourteen advantage");
+                    Assert.True(_secondPlayer.Score == "love fifteen thirteen fourteen");
+                }
             #endregion
         #endregion
     }
